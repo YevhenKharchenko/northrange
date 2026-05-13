@@ -1,31 +1,23 @@
 .hero-section {
-  background: linear-gradient(270deg, #aeddf2 0%, #8bc4dd 100%);
-
   @include media(desktop) {
   }
 }
 
 .hero-bg-wrapper {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 112px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom 139px center;
-  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 128px;
-    padding-bottom: 80px;
+    padding-top: 125px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
-    background-position: bottom center;
   }
 }
 
 .hero-container {
+  padding: 0;
+
   @include media(desktop) {
   }
 }
@@ -36,62 +28,34 @@
 }
 
 .hero-text-wrapper {
+  padding: 0 16px;
+  margin-bottom: 24px;
+
   @include media(desktop) {
+    padding: 0 120px;
+    margin-bottom: 0;
   }
 }
 
-.hero-main-title {
-  font-family: 'Squada One', sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  text-align: center;
-  color: #eef5f7;
-  margin-bottom: 16px;
+.hero-title-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 
   @include media(desktop) {
-    font-size: 64px;
-    text-align: left;
-    margin-bottom: 32px;
-  }
-}
-
-.hero-subtitle {
-  font-family: 'Squada One', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  text-align: center;
-  color: #63666b;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    font-size: 32px;
-    text-align: left;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
 }
 
 .hero-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
-  color: #343945;
-  max-width: 313px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 240px;
+  color: #2f343b;
 
   @include media(desktop) {
-    font-size: 16px;
-    text-align: left;
-    max-width: 618px;
-    margin: 0;
-    margin-bottom: 64px;
   }
 }
 
@@ -103,43 +67,18 @@
   }
 }
 
-.hero-btn {
-  box-shadow: 2px 3px 3px 0 rgba(40, 64, 112, 0.5);
-  background: #ffd863;
-  border: 1px solid #5f7b88;
-  border-radius: 16px;
-  padding: 13px 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 320px;
+.hero-top-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
-  transition: background 0.3s ease-in-out;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background: linear-gradient(180deg, #ffd863 0%, #dfa802 100%);
-  }
 
   @include media(desktop) {
-    margin: 0;
-    margin-bottom: 93px;
   }
 }
 
-.hero-bottom-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.6;
-  color: #63666b;
+.hero-bottom-img {
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    font-size: 12px;
-    text-align: left;
   }
 }

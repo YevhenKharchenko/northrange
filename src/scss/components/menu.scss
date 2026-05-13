@@ -1,7 +1,8 @@
 .context-menu {
   display: none;
-  background: #eef5f7;
-  padding: 32px 16px 32px;
+  background: #f4f7fb;
+  border-bottom: 1px solid #c7d2e0;
+  padding: 48px 16px 48px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -21,8 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 79px;
+  gap: 64px;
 }
 
 .context-list-item {
@@ -34,10 +34,11 @@
   justify-content: center;
   align-items: center;
   padding: 8px 0px;
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #343945;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2f343b;
   opacity: 0.8;
   width: 100%;
   margin-left: auto;
@@ -56,7 +57,7 @@
     bottom: 0;
     width: 100%;
     height: 1px;
-    background-color: #5f7b88;
+    background-color: #77a8bc;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease-in-out;
@@ -70,24 +71,6 @@
       transform: scaleX(1);
     }
   }
-}
-
-.context-privacy-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.context-privacy-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  color: #343945;
 }
 
 .is-open {

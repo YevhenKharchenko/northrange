@@ -1,5 +1,6 @@
 .footer {
-  background: #5f7b88;
+  background: #dfecfd;
+  border-top: 1px solid #c7d2e0;
 
   @include media(desktop) {
   }
@@ -10,7 +11,7 @@
 
   @include media(desktop) {
     padding-top: 80px;
-    padding-bottom: 66px;
+    padding-bottom: 80px;
   }
 }
 
@@ -29,30 +30,13 @@
   gap: 32px;
 
   @include media(desktop) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
-  }
-}
-
-.footer-top-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #eef5f7;
-
-  @include media(desktop) {
-    min-width: 237px;
-    order: 1;
   }
 }
 
 .footer-nav {
   @include media(desktop) {
-    max-width: max-content;
-    order: 3;
   }
 }
 
@@ -60,10 +44,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 64px;
 
   @include media(desktop) {
-    gap: 16px;
   }
 }
 
@@ -71,39 +54,32 @@
 }
 
 .footer-link {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 1.6;
-  color: #eef5f7;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2f343b;
 
   @include media(desktop) {
   }
 }
 
 .footer-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
-  color: #eef5f7;
+  color: #2f343b;
 
   @include media(desktop) {
-    order: 2;
   }
 }
 
 .footer-text-br {
   @include media(desktop) {
     display: none;
-  }
-}
-
-.footer-text-span {
-  display: none;
-
-  @include media(desktop) {
-    display: inline;
   }
 }
