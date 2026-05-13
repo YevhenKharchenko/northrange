@@ -1,0 +1,145 @@
+.hero-section {
+  background: linear-gradient(270deg, #aeddf2 0%, #8bc4dd 100%);
+
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom 139px center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 128px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-position: bottom center;
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.hero-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.hero-main-title {
+  font-family: 'Squada One', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #eef5f7;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 64px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Squada One', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #63666b;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+}
+
+.hero-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  color: #343945;
+  max-width: 313px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 240px;
+
+  @include media(desktop) {
+    font-size: 16px;
+    text-align: left;
+    max-width: 618px;
+    margin: 0;
+    margin-bottom: 64px;
+  }
+}
+
+.hero-text-br {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.hero-btn {
+  box-shadow: 2px 3px 3px 0 rgba(40, 64, 112, 0.5);
+  background: #ffd863;
+  border: 1px solid #5f7b88;
+  border-radius: 16px;
+  padding: 13px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: linear-gradient(180deg, #ffd863 0%, #dfa802 100%);
+  }
+
+  @include media(desktop) {
+    margin: 0;
+    margin-bottom: 93px;
+  }
+}
+
+.hero-bottom-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #63666b;
+
+  @include media(desktop) {
+    font-size: 12px;
+    text-align: left;
+  }
+}

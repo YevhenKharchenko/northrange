@@ -1,0 +1,56 @@
+.about-section {
+  background: #d1e3ee;
+
+  @include media(desktop) {
+  }
+}
+
+.about-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 64px;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+}
+
+.about-container {
+  @include media(desktop) {
+  }
+}
+
+.about-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.about-title {
+  @include media(desktop) {
+  }
+}
+
+.about-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.about-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #343945;
+
+  @include media(desktop) {
+  }
+}
+
+.about-text-br {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}

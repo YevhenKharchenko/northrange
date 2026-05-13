@@ -1,0 +1,73 @@
+.gameplay-section {
+  background: #d1e3ee;
+}
+
+.gameplay-bg-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bg-wrapper {
+  padding-top: 48px;
+
+  @include media(desktop) {
+    padding-top: 64px;
+  }
+}
+
+.gameplay-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-title {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text-wrapper {
+  padding: 0 16px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    padding: 0 120px;
+    margin-bottom: 48px;
+  }
+}
+
+.gameplay-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #343945;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+  }
+}

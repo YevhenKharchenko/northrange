@@ -1,0 +1,97 @@
+.info-section {
+  background: #d1e3ee;
+}
+
+.info-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 64px;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+}
+
+.info-container {
+  @include media(desktop) {
+  }
+}
+
+.info-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.info-title {
+  @include media(desktop) {
+  }
+}
+
+.info-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: #343945;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+}
+
+.info-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
+.info-img-wrapper {
+  @include media(desktop) {
+    order: 2;
+  }
+}
+
+.info-img {
+  @include media(desktop) {
+    min-width: 116px;
+  }
+}
+
+.info-top-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #343945;
+
+  @include media(desktop) {
+    max-width: max-content;
+    order: 1;
+  }
+}
+
+.info-bottom-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #343945;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 286px;
+    order: 3;
+  }
+}

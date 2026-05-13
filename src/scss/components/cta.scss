@@ -1,0 +1,63 @@
+.cta-section {
+  @include media(desktop) {
+  }
+}
+
+.cta-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 64px;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+}
+
+.cta-container {
+  @include media(desktop) {
+  }
+}
+
+.cta-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.cta-title {
+  @include media(desktop) {
+  }
+}
+
+.cta-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.cta-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #343945;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.cta-text-br {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.cta-btn {
+  @include media(desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

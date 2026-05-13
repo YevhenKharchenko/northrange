@@ -1,0 +1,104 @@
+.features-section {
+  background: #d1e3ee;
+
+  @include media(desktop) {
+  }
+}
+
+.features-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+  }
+}
+
+.features-list-item {
+  background: #344b56;
+  border: 2px solid #5f7b88;
+  border-radius: 16px;
+  padding: 22px 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding: 30px 22px;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0;
+  }
+}
+
+.features-item-img {
+  min-width: 80px;
+
+  @include media(desktop) {
+    min-width: 140px;
+  }
+}
+
+.features-item-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.features-item-title {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #eef5f7;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.features-item-text {
+  font-family: 'Chiron GoRound TC', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eef5f7;
+
+  @include media(desktop) {
+    text-align: center;
+  }
+}
