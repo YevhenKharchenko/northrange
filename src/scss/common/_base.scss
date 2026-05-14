@@ -51,17 +51,19 @@ html {
 }
 
 .section-title-wrapper {
-  background: #5f7b88;
   padding-top: 90px;
   padding-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
 
   @include media(desktop) {
     padding-top: 80px;
   }
+}
+
+.section-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
 .section-title-line {
@@ -70,7 +72,6 @@ html {
   height: 1px;
 
   @include media(desktop) {
-    padding-top: 80px;
   }
 }
 
@@ -78,9 +79,11 @@ html {
   font-family: 'Urbanist', sans-serif;
   font-weight: 300;
   font-size: 10px;
-  line-height: 1;
+  line-height: 1.5;
+  text-transform: uppercase;
   text-align: center;
   color: #6b7280;
+  min-width: max-content;
 
   @include media(desktop) {
   }

@@ -1,5 +1,5 @@
 .privacy-header {
-  background: #eef5f7;
+  background: #f4f7fb;
   padding-top: 12px;
   padding-bottom: 12px;
   position: fixed;
@@ -15,12 +15,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
   font-size: 10px;
   line-height: 1.5;
   text-align: center;
-  color: #343945;
+  color: #2f343b;
   max-width: max-content;
 
   @include media(desktop) {
@@ -28,6 +28,6 @@
 }
 
 .arrow-back-icon {
-  stroke: #343945;
+  stroke: #2f343b;
   fill: none;
 }

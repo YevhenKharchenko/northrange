@@ -1,25 +1,22 @@
 .features-section {
-  background: #d1e3ee;
-
   @include media(desktop) {
   }
 }
 
 .features-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 64px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-top: 64px;
-    padding-bottom: 80px;
-    max-width: 1440px;
   }
 }
 
 .features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title-wrapper {
   @include media(desktop) {
   }
 }
@@ -29,76 +26,87 @@
   }
 }
 
-.features-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.features-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.features-list-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 48px;
 
   @include media(desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px 19px;
+  margin-bottom: 64px;
+
+  @include media(desktop) {
     gap: 32px;
+    margin-bottom: 38px;
   }
 }
 
 .features-list-item {
-  background: #344b56;
-  border: 2px solid #5f7b88;
-  border-radius: 16px;
-  padding: 22px 14px;
+  background: linear-gradient(180deg, #b6d8f8 0%, #285465 100%);
+  border: 1px solid #c7d2e0;
+  border-radius: 999px;
+  padding: 38px 24px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 16px;
   width: 100%;
-  max-width: 323px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 160px;
 
   @include media(desktop) {
-    padding: 30px 22px;
-    flex-direction: column;
-    max-width: 300px;
-    margin: 0;
+    padding: 48px 30px;
+    max-width: 200px;
   }
 }
 
 .features-item-img {
-  min-width: 80px;
-
   @include media(desktop) {
-    min-width: 140px;
-  }
-}
-
-.features-item-text-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.features-item-title {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #eef5f7;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    font-size: 24px;
-    text-align: center;
   }
 }
 
 .features-item-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #eef5f7;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #f4f7fb;
 
   @include media(desktop) {
-    text-align: center;
+    font-size: 16px;
+  }
+}
+
+.features-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #2f343b;
+  max-width: 293px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    line-height: 1.5;
+    max-width: max-content;
   }
 }

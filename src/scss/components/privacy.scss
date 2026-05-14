@@ -1,83 +1,90 @@
 .policy-section {
-  background: #eef5f7;
-  padding-top: 104px;
-  padding-bottom: 40px;
+  background: #f4f7fb;
+  padding-top: 100px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-top: 136px;
-    padding-bottom: 48px;
+    padding-top: 120px;
+    padding-bottom: 100px;
   }
 }
 
-.policy-main-title {
-  font-family: 'Squada One', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
+.policy-section h1 {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
-  color: #343945;
-  margin-bottom: 40px;
+  color: #6b7280;
+  margin-bottom: 30px;
 
   @include media(desktop) {
-    font-size: 64px;
-    margin-bottom: 48px;
+    font-size: 48px;
+    margin-bottom: 52px;
   }
 }
 
-.policy-title {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
+.policy-section h2 {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  color: #343945;
+  text-transform: uppercase;
+  color: #2f343b;
   margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
 
-.policy-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+.policy-section h3 {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
   line-height: 1.5;
-  color: #343945;
-
-  &:not(:last-child) {
-    margin-bottom: 16px;
-  }
+  text-transform: uppercase;
+  color: #2f343b;
+  margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
 
-.policy-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.policy-item {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
+.policy-section p {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 1.5;
-  color: #343945;
-  margin-bottom: 8px;
-
-  &:last-child {
-    margin-bottom: 16px;
-  }
+  color: #2f343b;
+  margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
 
-.policy-span {
-  text-decoration: underline;
+.policy-section li {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2f343b;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
 }
 
-.policy-link {
+.policy-section a {
   text-decoration: underline;
-  word-wrap: break-word;
+  text-decoration-skip-ink: none;
+  word-break: break-all;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section span {
+  @include media(desktop) {
+  }
 }

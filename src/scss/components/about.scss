@@ -1,17 +1,13 @@
 .about-section {
-  background: #d1e3ee;
-
   @include media(desktop) {
   }
 }
 
 .about-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-top: 64px;
-    padding-bottom: 80px;
   }
 }
 
@@ -35,19 +31,78 @@
   }
 }
 
-.about-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+.about-list-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
   text-align: center;
-  color: #343945;
+  color: #6b7280;
+  margin-bottom: 48px;
 
   @include media(desktop) {
   }
 }
 
-.about-text-br {
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px 19px;
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    gap: 32px;
+  }
+}
+
+.about-list-item {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 160px;
+
+  @include media(desktop) {
+    max-width: 220px;
+  }
+}
+
+.about-item-img {
+  @include media(desktop) {
+  }
+}
+
+.about-item-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2f343b;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.about-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #6b7280;
+
+  @include media(desktop) {
+    line-height: 1.8;
+  }
+}
+
+.about-br {
   display: none;
 
   @include media(desktop) {

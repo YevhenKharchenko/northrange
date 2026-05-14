@@ -1,5 +1,5 @@
 .gameplay-section {
-  background: #d1e3ee;
+  background: #dfecfd;
 }
 
 .gameplay-bg-wrapper {
@@ -8,16 +8,14 @@
 }
 
 .gameplay-bg-wrapper {
-  padding-top: 48px;
+  padding-top: 64px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-top: 64px;
   }
 }
 
 .gameplay-container {
-  padding: 0;
-
   @include media(desktop) {
   }
 }
@@ -32,42 +30,129 @@
   }
 }
 
+.gameplay-text-br {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+
 .gameplay-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.gameplay-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+.gameplay-list-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #2f343b;
+
   @include media(desktop) {
   }
 }
 
-.gameplay-text-wrapper {
-  padding: 0 16px;
-  margin-bottom: 32px;
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    padding: 0 120px;
-    margin-bottom: 48px;
+    align-items: start;
+    margin: 0;
   }
 }
 
-.gameplay-subtitle {
+.gameplay-list-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: max-content;
+
+  @include media(desktop) {
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(4) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.gameplay-item-circle {
+  border-radius: 100%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(164, 192, 203) 0%,
+    rgb(119, 168, 188) 100%
+  );
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+
   @include media(desktop) {
   }
 }
 
-.gameplay-text {
-  font-family: 'Chiron GoRound TC', sans-serif;
-  font-weight: 400;
+.gameplay-item-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: #343945;
+  line-height: 1.5;
+  color: #2f343b;
 
   @include media(desktop) {
   }
 }
 
 .gameplay-img {
-  margin-left: auto;
-  margin-right: auto;
+  @include media(desktop) {
+    min-width: 272px;
+  }
+}
+
+.gameplay-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #6b7280;
 
   @include media(desktop) {
+  }
+}
+
+.gameplay-br {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
   }
 }
